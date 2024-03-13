@@ -65,6 +65,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 .btn {
     color: #fff;
     background-color: #000;
@@ -137,7 +141,7 @@ html {
 }
 
 #nav .subnav li:hover,
-#nav > li:hover > a {
+#nav > li:hover {
     color: #000;
     background-color: #ccc;
 }
@@ -171,9 +175,25 @@ html {
     font-size: 14px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    background-color: #000;
 }
 
 #header .search-btn:hover {
@@ -181,6 +201,7 @@ html {
     background-color: #f44336;
 }
 
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -193,7 +214,7 @@ html {
     /* min-height: 500px; */
     /* background-color: #333 ; */
     padding-top: 50%;
-    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content {
@@ -213,7 +234,7 @@ html {
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
-
+    text-shadow: 0 0 1px #000;
 }
 
 #content {
@@ -253,7 +274,7 @@ html {
 }
 
 #content .members-list{
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .member-name {
@@ -306,7 +327,7 @@ html {
 
 /* Places  */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
     /* margin-bottom: 48px; */
 }
 /*  delete due to col-third
@@ -465,6 +486,15 @@ html {
 .contact-info i[class*="ti-"]{
     width: 30px;
     display: inline-block;
+}
+
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
 }
 
 .contact-form {
