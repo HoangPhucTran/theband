@@ -284,7 +284,12 @@ html {
 #content .member-img {
     margin-top: 15px;
     width: 154px;
+    height: 154px;
     border-radius: 5px;
+    /* width: 200px;
+    height: 200px; */
+    overflow: hidden;
+    object-fit: cover; 
 }
 
 /* Tour section  */
@@ -551,4 +556,5 @@ html {
 
 #footer .copyright a{
     color: rgba(0, 0, 0, .6);
+    text-decoration: none;
 }
